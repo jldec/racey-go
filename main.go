@@ -9,6 +9,8 @@ import (
 
 func main() {
 	count := new(counter.CounterAtomic)
+	// count := new(counter.CounterMutex)
+	// count := counter.NewCounterChannel()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		count.Inc()
