@@ -4,5 +4,5 @@ sources:
 transformations:
   replace:
     - name: jurgen-test
-      regex: racey-go
+      token: racey-go
       with: "#projectName"
