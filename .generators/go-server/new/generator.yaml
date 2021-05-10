@@ -1,0 +1,8 @@
+sources:
+  installFromRoot: true
+
+transformations:
+  replace:
+    - name: jurgen-test
+      regex: racey-go
+      with: "#projectName"
